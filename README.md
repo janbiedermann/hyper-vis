@@ -12,7 +12,7 @@ Currently supports the complete API for:
 
 ### Installation
 for a rails app:
-```rb
+```ruby
 gem 'hyper-vis'
 ```
 and `bundle update`
@@ -28,7 +28,7 @@ stylesheets are includes in 'vis/source/vis.css', images are there too.
 ### Usage
 
 #### The Vis part
-```rb
+```ruby
 dataset = Vis::DataSet.new([{id: 1, name: 'foo'}, {id: 2, name: 'bar'}, {id: 3, name: 'pub'}])
 edge_dataset = Vis::DataSet.new([{from: 1, to: 2}, {from: 2, to: 3}])
 dom_node = Vis::Network.test_container
@@ -39,7 +39,7 @@ xy = net.canvas_to_dom({x: 10, y: 10})
 The Component takes care about all the things necessary to make Vis.js play nice with React.
 The Component also provides a helper to access the document.
 Vis::Network can be used within the render_with_dom_node.
-```rb
+```ruby
 class MyVisNetworkComponent
   include Hyperloop::Vis::Network::Mixin
 
