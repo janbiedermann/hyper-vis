@@ -21,6 +21,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency "hyperloop", "~> 1.0.0.lap27"
   s.add_development_dependency "hyper-spec", "~> 1.0.0.lap27"
   s.add_development_dependency "listen"
+  s.add_development_dependency "puma"
   s.add_development_dependency "rake", ">= 11.3.0"
   s.add_development_dependency "rails", ">= 5.1.0"
   s.add_development_dependency "rspec-rails"
